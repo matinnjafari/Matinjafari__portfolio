@@ -1,4 +1,4 @@
-import vid1 from "../assets/vid1.mp4";
+import vid1 from "../assets/vid1.MP4";
 import workPhoto1 from "../assets/work-photo1.JPG";
 import workPhoto2 from "../assets/work-photo2.jpg";
 import workPhoto3 from "../assets/work-photo3.jpg";
