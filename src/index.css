@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Peyda:wght@100..900&display=swap');
-[lang="fa"] {
+body[dir="rtl"] {
   font-family: "Peyda", sans-serif;
 }
 * {
