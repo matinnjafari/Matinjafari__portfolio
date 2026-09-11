@@ -1,5 +1,5 @@
 import "./Work.css";
-import work1 from "../../assets/work1.jpg";
+import work1 from "../../assets/work1.png";
 import work2 from "../../assets/work2.png";
 import work3 from "../../assets/work3.png";
 import { Link } from "react-router-dom";
