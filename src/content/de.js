@@ -22,8 +22,8 @@ const de = {
         year: "2026",
       },
       {
-        name: "Projekt Zwei",
-        position: "Grafikdesigner",
+        name: "Beschaffungs managementsystem von Rastafan",
+        position: "UI/UX Designer",
         year: "2026",
       },
       {

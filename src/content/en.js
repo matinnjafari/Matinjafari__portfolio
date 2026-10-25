@@ -22,8 +22,8 @@ const en = {
         year: "2026",
       },
       {
-        name: "Project Two",
-        position: "Graphic Designer",
+        name: "Rastafan Procurement Management System",
+        position: "UI/UX Designer",
         year: "2026",
       },
       {

@@ -3,6 +3,7 @@ import workPhoto1 from "../assets/work-photo1.JPG";
 import workPhoto2 from "../assets/work-photo2.jpg";
 import workPhoto3 from "../assets/work-photo3.jpg";
 import workPhoto4 from "../assets/work-photo4.jpg";
+import project2Placeholder from "../assets/work1.png";
 // import posterEng from "../assets/poster-eng.jpg";
 // import posterClass from "../assets/poster-class.jpg";
 
@@ -53,42 +54,87 @@ const projects = {
 
     behance: "https://www.behance.net/",
   },
-
   projectTwo: {
-    title: "Project Two",
-    role: "Graphic Designer",
-    year: "2026",
+  title: "Rastafan Trading System",
+  role: "UI/UX Designer",
+  year: "2026",
 
-    description:
-      "A short description of the project.",
+  description:
+    "A UX redesign of an internal procurement and management system used by approximately 1,000 employees at Rastafan.",
 
-    introduction:
-      "A short introduction to this project.",
+  introduction:
+    "Rastafan's Trading System is an internal platform used by employees to manage purchasing processes within the company. I redesigned key parts of the system to make everyday tasks clearer, faster, and easier to navigate.",
 
-    images: [],
+  sections: [
+    {
+      title: "The Problem",
+      text:
+        "The existing system had several UX issues that made common tasks unnecessarily difficult. The interface contained confusing interactions, unclear information hierarchy, and navigation patterns that created friction in everyday workflows.",
 
-    sections: [],
+      images: [project2Placeholder],
+    },
 
-    behance: "https://www.behance.net/",
-  },
+    {
+      title: "Understanding the Existing Experience",
+      text:
+        "I reviewed the existing interface and its main workflows to identify areas where users experienced unnecessary complexity.",
 
-  projectThree: {
-    title: "Project Three",
-    role: "UI/UX Designer",
-    year: "2025",
+      images: [project2Placeholder],
+    },
 
-    description:
-      "A short description of the project.",
+    {
+      title: "User Flow",
+      text:
+        "I mapped the main purchasing workflow to understand how users move through the system, from creating a purchase request to managing requests through the dashboard.",
 
-    introduction:
-      "A short introduction to this project.",
+      images: [project2Placeholder],
+    },
 
-    images: [],
+    {
+      title: "Wireframes",
+      text:
+        "I explored different layouts and information structures through wireframes before moving into the final visual design.",
 
-    sections: [],
+      images: [
+        project2Placeholder,
+        project2Placeholder,
+      ],
+    },
 
-    behance: "https://www.behance.net/",
-  },
+    {
+      title: "Design Decisions",
+      text:
+        "The redesign focused on creating a clearer information hierarchy, reducing unnecessary complexity, and making important actions easier to discover.",
+
+      images: [
+        project2Placeholder,
+        project2Placeholder,
+      ],
+    },
+
+    {
+      title: "Redesign",
+      text:
+        "The first redesigned areas were the Create Purchase Request page and the Cartable. These screens were redesigned around the workflows employees use when creating, reviewing, and managing purchase requests.",
+
+      images: [
+        project2Placeholder,
+        project2Placeholder,
+      ],
+    },
+
+    {
+      title: "Prototype",
+      text:
+        "Interactive prototypes were created to demonstrate the redesigned workflows and show how users can move through the system more efficiently.",
+
+      images: [project2Placeholder],
+    },
+  ],
+
+  behance: "https://www.behance.net/",
+}
 };
+
 
 export default projects;

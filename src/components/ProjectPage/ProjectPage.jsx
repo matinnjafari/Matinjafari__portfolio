@@ -7,7 +7,6 @@ function ProjectPage({ project }) {
       {/* HEADER */}
 
       <section className="project-header">
-
         <h1>{project.title}</h1>
 
         <div className="project-meta">
@@ -18,59 +17,55 @@ function ProjectPage({ project }) {
         <p className="project-description">
           {project.description}
         </p>
-
       </section>
 
 
       {/* VIDEO */}
 
-      <section className="project-video">
+      {project.video && (
+        <section className="project-video">
+          <video
+            src={project.video}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </section>
+      )}
 
-        <video
-          src={project.video}
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
 
-      </section>
-
-
-      {/* INTRODUCTION */}
+      {/* PROJECT OVERVIEW */}
 
       <section className="project-introduction">
-
         <div className="project-label">
-          About the project
+          Project Overview
         </div>
 
         <div className="project-large-text">
           <p>{project.introduction}</p>
         </div>
-
       </section>
 
 
-      {/* IMAGES */}
+      {/* PROJECT IMAGES */}
 
-      <section className="project-images">
+      {project.images && project.images.length > 0 && (
+        <section className="project-images">
+          {project.images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`${project.title} ${index + 1}`}
+            />
+          ))}
+        </section>
+      )}
 
-        {project.images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`${project.title} ${index + 1}`}
-          />
-        ))}
 
-      </section>
-
-
-      {/* TEXT SECTIONS */}
+      {/* CASE STUDY SECTIONS */}
 
       {project.sections.map((section, index) => (
-
         <section
           className="project-text-section"
           key={index}
@@ -80,28 +75,43 @@ function ProjectPage({ project }) {
             {section.title}
           </div>
 
-          <div className="project-section-text">
-            <p>{section.text}</p>
+          <div className="project-section-content">
+
+            {section.text && (
+              <p>{section.text}</p>
+            )}
+
+            {section.images && section.images.length > 0 && (
+              <div className="project-section-images">
+                {section.images.map((image, imageIndex) => (
+                  <img
+                    key={imageIndex}
+                    src={image}
+                    alt={`${section.title} ${imageIndex + 1}`}
+                  />
+                ))}
+              </div>
+            )}
+
           </div>
 
         </section>
-
       ))}
 
 
       {/* BEHANCE */}
 
-      <section className="project-behance">
-
-        <a
-          href={project.behance}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View the full project on Behance ↗
-        </a>
-
-      </section>
+      {project.behance && (
+        <section className="project-behance">
+          <a
+            href={project.behance}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the full project on Behance ↗
+          </a>
+        </section>
+      )}
 
     </main>
   );
